@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="user" id="username" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="user@gmail.com" id="email" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password check</label>
+          <input
+            type="password"
+            placeholder="Re-enter password"
+            id="password2"
+          />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

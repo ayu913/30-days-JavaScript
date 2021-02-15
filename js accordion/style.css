@@ -1,0 +1,44 @@
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 150px auto;
+  }
+  
+  button.accordion {
+    width: 100%;
+    background-color: rgb(37, 124, 15);
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 22px;
+    color: rgb(7, 6, 6);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+   
+  }
+  
+  button.accordion:after {
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: right;
+  }
+  
+  button.accordion.is-open:after {
+    content: '\f056';
+  }
+  
+  button.accordion:hover, button.accordion.is-open {
+    background-color: #ddd;
+  }
+  
+  .accordion-content {
+    background-color: whitesmoke;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
